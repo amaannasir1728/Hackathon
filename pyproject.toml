@@ -1,0 +1,2 @@
+[tool.vercel]
+entrypoint = 'company_research_compleye;app'
