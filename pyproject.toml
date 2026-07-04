@@ -1,2 +1,2 @@
 [tool.vercel]
-entrypoint = 'company_research_compleye;app'
+entrypoint = 'company_research_complete:app'
