@@ -540,7 +540,7 @@ async def send_discord_message(
 
 # ============ API ENDPOINTS ============
 
-@app.get("/")
+@app.get("/api")
 def health_check():
     return {
         "status": "Company Research Assistant API running",
