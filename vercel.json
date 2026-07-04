@@ -1,14 +1,23 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "company_research_complete.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "company_research_complete.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
     }
   ]
 }
